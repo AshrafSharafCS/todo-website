@@ -18,13 +18,16 @@ $num_rows = $query->num_rows();
 
 if ($num_rows == 0) {
     $response['status'] = "user not found";
+    $response['isLogged']=false;
 } else {
     if (password_verify($password, $hashed_password)) {
         $response['status'] = "logged in";
+        $response['isLogged']=true;
         $_SESSION['user_id'] = $id;
         $_SESSION['user_score'] = $score;
     } else {
         $response['status'] = "incorrect credentials";
+        $response['isLogged']=false;
     }
 }
 echo json_encode($response);

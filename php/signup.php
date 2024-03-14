@@ -19,9 +19,11 @@ if ($email__username_exists == 0) {
     $query->bind_param('ssss', $name, $username,$email,$hashed_password);
     $query->execute();
     $response['status'] = "success";
+    $response['isSigned']=true;
 
 } else {
     $response["status"] = "user already exists";
+    $response['isSigned']=false;
 
 }
 echo json_encode($response);
