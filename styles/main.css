@@ -1,0 +1,33 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  
+  header {
+    padding: 30px;
+    background-color: rgb(68, 65, 65);
+    color: rgb(26, 155, 101);
+  }
+  
+  .flex {
+    display: flex;
+  }
+  
+  .center {
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .row {
+    flex-direction: row;
+  }
+  
+  .column {
+    flex-direction: column;
+  }
+
+  
+  
