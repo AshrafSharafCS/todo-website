@@ -58,12 +58,35 @@ const deleteTodo = async (formdata) => {
     console.log(error);
   }
 };
-const deleteTododata = new FormData();
-deleteTododata.append("todo-id", 15);
-deleteTodo(deleteTododata).then((response) => {
-console.log(response);
-});
+// const deleteTododata = new FormData();
+// deleteTododata.append("todo-id", 15);
+// deleteTodo(deleteTododata).then((response) => {
+// console.log(response);
+// });
 
 
 
+// Update todo
+const updateTodo = async (formdata) => {
+  try {
+    const result = await fetch(
+      "http://localhost/todo-website/php/updateTodo.php",
+      {
+        body: formdata,
+        method: "POST",
+      }
+    );
+
+    return await result.json();
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+// const updateTododata = new FormData();
+// updateTododata.append("description", "this is a todo");
+// updateTododata.append("todo-id", 8);
+// updateTodo(updateTododata).then((response) => {
+// console.log(response["status"]);
+// });
 
