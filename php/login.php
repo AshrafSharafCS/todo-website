@@ -3,6 +3,8 @@ session_start();
 
 include('connection.php');
 
+if(isset( $_POST['email-username'],$_POST['password'])) {
+
 $email_username = $_POST['email-username'];
 $password = $_POST['password'];
 
@@ -31,3 +33,4 @@ if ($num_rows == 0) {
     }
 }
 echo json_encode($response);
+}
