@@ -1,0 +1,13 @@
+.todo-container{
+    margin-top: 70px;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    gap: 10px;
+    background-color: rgb(68, 65, 65);
+    border-radius: 10px;
+    padding: 20px;
+    color: rgb(64, 202, 145);
+    
+}
+
