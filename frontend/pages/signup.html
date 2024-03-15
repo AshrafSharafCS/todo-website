@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/signup.css" />
+    <title>Sign-up</title>
+  </head>
+  <body>
+    <header>
+      <h1>To-Do</h1>
+    </header>
+    <div class="flex center">
+      <form class="flex column signup" id="signup-form">
+        <div class="flex row signup-inputs">
+          <label>Full Name</label>
+          <input type="text" name="fullname" placeholder="Full Name" required/>
+        </div>
+        <div class="flex row signup-inputs">
+          <label>Username</label>
+          <input type="text" name="username" placeholder="Username" required/>
+        </div>
+        <div class="flex row signup-inputs ">
+          <label>Email</label>
+          <input type="text" name="email" placeholder="Email" required/>
+        </div>
+        <div class="flex row signup-inputs">
+          <label>Passowrd</label>
+          <input type="password" name="password" placeholder="Password" required/>
+        </div>
+        <div class="flex row signup-inputs">
+          <label>Confirm Passowrd</label>
+          <input type="password" name="confirmpassword" placeholder="Confirm Password" required/>
+        </div>
+
+        <button type="submit" id="signup-btn">Submit</button>
+      </form>
+    </div>
+
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>

@@ -1,6 +1,6 @@
 const signup = async (formdata) => {
     try {
-      const result = await fetch("http://localhost/todo-website/php/signup.php", {
+      const result = await fetch("http://localhost/todo-website/backend/signup.php", {
         body: formdata,
         method: "POST",
       });

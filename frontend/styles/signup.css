@@ -1,4 +1,4 @@
-.login{
+.signup{
     margin-top: 70px;
     align-items: center;
     justify-content: center;
@@ -9,8 +9,7 @@
     padding: 20px;
     color: rgb(26, 155, 101);
 }
-a{
-text-decoration: none;
-font-size: 13px;
-color:  rgb(26, 155, 101);
+.signup-inputs{
+    justify-content: space-between;
+    width: 100%;
 }

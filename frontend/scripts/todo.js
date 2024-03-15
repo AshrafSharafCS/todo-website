@@ -2,7 +2,7 @@
 const addTodo = async (formdata) => {
   try {
     const result = await fetch(
-      "http://localhost/todo-website/php/createTodo.php",
+      "http://localhost/todo-website/backend/createTodo.php",
       {
         body: formdata,
         method: "POST",
@@ -26,7 +26,7 @@ const addTodo = async (formdata) => {
 // Read todo
 const readTodo = async () => {
   try {
-    const result = await fetch("http://localhost/todo-website/php/readTodo.php", {
+    const result = await fetch("http://localhost/todo-website/backend/readTodo.php", {
       method: "GET",
     });
 
@@ -46,7 +46,7 @@ const readTodo = async () => {
 const deleteTodo = async (formdata) => {
   try {
     const result = await fetch(
-      "http://localhost/todo-website/php/deleteTodo.php",
+      "http://localhost/todo-website/backend/deleteTodo.php",
       {
         body: formdata,
         method: "POST",
@@ -70,7 +70,7 @@ const deleteTodo = async (formdata) => {
 const updateTodo = async (formdata) => {
   try {
     const result = await fetch(
-      "http://localhost/todo-website/php/updateTodo.php",
+      "http://localhost/todo-website/backend/updateTodo.php",
       {
         body: formdata,
         method: "POST",
