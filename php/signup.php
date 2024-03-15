@@ -1,7 +1,7 @@
 <?php
 include ("connection.php");
  
- 
+if(isset($_POST['name'], $_POST['username'], $_POST['email'], $_POST['password'])) {
 $name = $_POST['name'];
 $username = $_POST['username'];
 $email = $_POST['email'];
@@ -27,5 +27,6 @@ if ($email__username_exists == 0) {
 
 }
 echo json_encode($response);
+}
 
 ?>
