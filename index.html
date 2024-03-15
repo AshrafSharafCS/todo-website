@@ -15,16 +15,17 @@
     <form class="flex column login" id="login-form">
         <div class="flex row login-inputs">
             <label>Username</label>
-            <input type="text" name="username" placeholder="Username">
+            <input type="text" id="login-username" placeholder="Username" required>
         </div>
         <div class="flex row login-inputs">
           <label>Passowrd</label>
-       <input type="password" name="password" placeholder="Password">
+       <input type="password" name="login-password" placeholder="Password" required>
         </div>
-        <button type="submit" id="login-btn">Submit</button>
+        <button type="submit" id="login-btn">Log-in</button>
         <a href="./frontend/pages/signup.html">Sign-up here</a>
       </form>
     </div>
-
+    <script src="./frontend/scripts/login.js"></script>
+   
 </body>
 </html>

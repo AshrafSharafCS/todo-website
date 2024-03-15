@@ -10,9 +10,21 @@ const login = async (formdata) => {
       console.log(error);
     }
   };
-  const logindata = new FormData();
-  logindata.append("email-username", "i");
-  logindata.append("password", "bob123");
-  // login(logindata).then((response) =>{
-  //   console.log(response);
-  //   });
+
+
+  // login function
+
+const loginBtn = document.getElementById("login-btn");
+
+loginBtn.addEventListener("click", () => {
+  window.location.href= "./frontend/pages/todo.html";
+  const loginUsername = document.getElementById("login-username");
+  const loginPassword = document.getElementById("login-password");
+
+  let loginformdata = new FormData();
+  loginformdata.append("email-username", loginUsername.value);
+  loginformdata.append("password", loginPassword.value);
+    login(loginformdata);
+  window.location.href= "./frontend/pages/todo.html";
+
+});
