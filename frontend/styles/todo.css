@@ -1,4 +1,4 @@
-.todo-container{
+.todo{
     margin-top: 70px;
     align-items: center;
     justify-content: center;
@@ -11,3 +11,17 @@
     
 }
 
+.todo-container{
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    gap:20px;
+    color: rgb(64, 202, 145);
+    height: 400px;
+    background-color: rgb(68, 65, 65);
+    
+}
+.todo-element{
+    justify-content: space-around;
+    
+}
